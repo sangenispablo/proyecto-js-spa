@@ -44,12 +44,13 @@ const router = async () => {
 
   // llamo al metodo async getHtml, acá podria poner la logica para recuperar datos
   // de una BD
-  document.querySelector('#app').innerHTML = await view.getHtml();
-
+  document.querySelector("#app").innerHTML = await view.getHtml();
 };
 
 // llamo al evento que carga los history creados con pushState
-window.addEventListener("popstate", router);
+window.addEventListener("popstate", () => {
+  router();
+});
 
 // llamo a la funcion router solo cuando se carga el DOM completo
 document.addEventListener("DOMContentLoaded", () => {
