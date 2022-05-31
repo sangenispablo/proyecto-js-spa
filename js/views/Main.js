@@ -56,7 +56,7 @@ export default class extends AbstractaVista {
                   <div
                     class="text-center text-xl-start text-xxl-center mb-4 mb-xl-0 mb-xxl-4"
                   >
-                    <h1 class="text-primary">Welcome to SB Admin Pro!</h1>
+                    <h1 class="text-primary">¡Bienvenidos al Main de mi SPA!</h1>
                     <p class="text-gray-700 mb-0">
                       Browse our fully designed UI toolkit! Browse our prebuilt
                       app pages, components, and utilites, and be sure to look

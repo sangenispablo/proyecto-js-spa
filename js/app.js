@@ -1,7 +1,6 @@
 // Importo las vistas (view) para ejecutar en cada routes
-import Dashboard from "./views/Dashboard.js";
-import Alumnos from "./views/Alumnos.js";
-import Profesores from "./views/Profesores.js";
+import Main from "./views/Main.js";
+import Precios from "./views/Precios.js";
 
 const navigateTo = (url) => {
   // uso de window la API history para insertar el href del link
@@ -12,9 +11,8 @@ const navigateTo = (url) => {
 const router = async () => {
   // defino mis rutas con su respectiva vista
   const routes = [
-    { path: "/", view: Dashboard },
-    { path: "/alumnos", view: Alumnos },
-    { path: "/profesores", view: Profesores },
+    { path: "/", view: Main },
+    { path: "/precios", view: Precios },
   ];
 
   // recorro el array routes y devulevo un objeto con la ruta y
